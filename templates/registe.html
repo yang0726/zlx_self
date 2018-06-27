@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册页面</title>
+</head>
+<style>
+        html,body{text-align:center;margin:0px auto;}
+</style>
+<body>
+<h1>注册</h1>
+<hr>
+
+<form method="post" action="registe">
+    {% csrf_token %}
+    <input name="username" type="text" placeholder="请输入用户名"><br>
+    <input name="password" type="password" placeholder="请输入用户口令"><br>
+    <input name="email" placeholder="请输入用户邮箱"><br>
+    <input name="phone" placeholder="请输入用户手机号"><br>
+    <button onclick="Registe()">注册</button>
+</form>
+<script>
+    function Registe() {
+    }
+</script>
+
+</body>
+</html>
